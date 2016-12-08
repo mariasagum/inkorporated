@@ -12,17 +12,23 @@ for (var i = 0; i < 360; i = i + 1){
 
 $(canvas).mousedown(function(e){ 
     drawing = true;
-if(e.pageY>=window.innerHeight-50){
-    var hue = Math.floor(e.pageX / space);
-    context.fillStyle = "hsl(" + hue + ", 100%, 50%)";
-}
+    if(e.pageY>=window.innerHeight-50){
+        var hue = Math.floor(e.pageX / space);
+        context.strokeStyle = "hsl(" + hue + ", 100%, 50%)";
+    } else {
+        context.beginPath();
+        context.moveTo(e.pageX, e.pageY);
+        
+    }
 });
 $(canvas).mousemove(function(e){ 
     if (drawing && e.pageY<window.innerHeight-50){
-    context.fillRect(e.pageX,e.pageY,5,5);
+        context.lineTo(e.pageX, e.pageY);
+        context.stroke();
     } 
 
 });
 $(canvas).mouseup(function(e){ 
     drawing = false;
+    
 });
