@@ -29,3 +29,17 @@ canvas {
     left: 10px;
         
 }
+.ResizedTextbox {
+    width: 300px;
+    height: 30px;
+    font-size: 100%;
+}
+.ResizedLabel {
+    padding-left: 50px;
+    font-size: 200%;
+}
+#pen {
+  
+    height: 150px;
+    transform: translate(0px,100px) rotate(302deg) ;
+}
