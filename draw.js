@@ -32,3 +32,4 @@ $(canvas).mouseup(function(e){
     drawing = false;
     
 });
+
