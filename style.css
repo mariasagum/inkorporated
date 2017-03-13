@@ -43,6 +43,7 @@ canvas {
     height: 150px;
     transform: translate(0px,100px) rotate(302deg) ;
 }
+
 input[type='range'] {  
     -webkit-appearance: none;  
    height: 1px; 
@@ -54,3 +55,4 @@ input[type='range'] {
     -webkit-transform-origin: top left;
    margin: 50px;
 }  
+
