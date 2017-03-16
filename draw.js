@@ -13,8 +13,9 @@ for (var i = 0; i < 360; i = i + 1){
 $(canvas).mousedown(function(e){ 
     drawing = true;
     if(e.pageY>=window.innerHeight-50){
-        var hue = Math.floor(e.pageX / space);
+		var hue = Math.floor(e.pageX / space);
         context.strokeStyle = "hsl(" + hue + ", 100%, 50%)";
+		context.lineWidth=10;
     } else {
         context.beginPath();
         context.moveTo(e.pageX, e.pageY);
@@ -32,3 +33,4 @@ $(canvas).mouseup(function(e){
     drawing = false;
     
 });
+
