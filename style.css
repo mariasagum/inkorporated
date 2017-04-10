@@ -4,7 +4,9 @@
      margin: 0;
      padding: 0;
 }
-          
+  
+
+
 #container {
     display:flex;
     align-items: center;
@@ -20,7 +22,8 @@ a {
 a:hover {color: #555376}
 
 canvas {
-        z-index: -10000000;
+        
+        
 }
 #logo {
     width: 100px;
